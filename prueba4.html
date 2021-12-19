@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <style>
+        .nue{
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div">
+        <p>Parrafo DOM primero</p>
+        <p>Parrafo DOM segundo</p>
+        <p>Parrafo DOM tercero</p>
+    </div>
+    <button onclick="anadirParrafo()">Añadir Parrafo</button>
+    <button onclick="borrarParrafo()">Borrar Parrafo</button>
+    <button onclick="anadirLink()">Añadir Enlace</button>
+    <button onclick="anadirClase()">Añadir Clase</button>
+    <button onclick="borrarClase()">Eliminar Clase</button>
+</body>
+
+</html>
+<script>
+    let div = document.querySelector('#div')
+    
+    function anadirParrafo() {
+        let parrafo = document.createElement('p')
+        parrafo.innerHTML = "Parrafo Dinamico"
+        div.appendChild(parrafo)
+    }
+
+    function borrarParrafo() {
+        let elemento=div.lastElementChild
+        elemento.remove()
+    }
+
+    function anadirLink(){
+        let link=document.createElement('a')
+        link.href="https://es.stackoverflow.com/questions/140333/cambiar-color-texto-javascript?rq=1"
+        link.innerHTML+="Link"+"<br>"
+        div.appendChild(link)
+    }
+    
+    function anadirClase(){
+        let elemento=div.firstElementChild
+        elemento.classList.add("nue")
+    }
+
+    function borrarClase(){
+        let elemento=div.firstElementChild
+        elemento.classList.remove("nue")
+    }
+
+</script>

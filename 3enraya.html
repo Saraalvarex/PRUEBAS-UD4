@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 en raya</title>
+</head>
+<body>
+    <table align="center" border="0">
+    <tr>
+    <td width="300" align="center">TRES EN RAYA</td>
+    </tr>
+    </table>
+    <table align="center" border="1">
+     <tr>
+      <td width="100" height="100" id="c0" onclick="pcelda(0)"></td>
+      <td width="100" height="100" id="c1" onclick="pcelda(1)"></td>
+      <td width="100" height="100" id="c2" onclick="pcelda(2)"></td>
+     </tr>
+     <tr>
+      <td width="100" height="100" id="c3" onclick="pcelda(3)"></td>
+      <td width="100" height="100" id="c4" onclick="pcelda(4)"></td>
+      <td width="100" height="100" id="c5" onclick="pcelda(5)"></td>
+     </tr>
+     <tr>
+      <td width="100" height="100" id="c6" onclick="pcelda(6)"></td>
+      <td width="100" height="100" id="c7" onclick="pcelda(7)"></td>
+      <td width="100" height="100" id="c8" onclick="pcelda(8)"></td>
+     </tr>
+     </table>
+     <table align="center" border="0">
+      <tr>   
+       <td width="300"  align="center"><br />
+        <a href="javascript:location.reload()">
+        <button>Reiniciar</button></a>
+       </td>   
+      </tr>
+    </table>
+    </body>
+    </html>
+    <!--
+    <div class="tablero"></div>
+    <button onclick="rellenar()">BOTON</button>
+    -->
+    <script>
+
+        let array=[]
+        function pcelda(valor){
+            array.forEach(function (element){
+                
+            })
+        }
+
+
+        /*
+        const tableroDOM = document.querySelector(".tablero")
+        let tablero = ([[], []])
+
+        function rellenar() {
+            for (let i = 0; i < 3; i++) {
+                tablero[i] = new Array(3)
+                for (let j = 0; j < 3; j++) {
+                    tablero[i][j] = 0
+                }
+            }
+            console.log(tablero)
+            pintarTablero()
+        }
+
+ TABLA CON FOREACH!!!!
+function pintarTabla(){
+   let tabla = document.createElement("table");
+   tabla.style.border="2px solid black";
+   tablero.forEach( (e,i) => {
+        tr = document.createElement("tr");
+        e.forEach( (celda, j) => {
+            td = document.createElement("td");
+            td.innerHTML=contenido;
+            td.style.border="2px solid black";
+
+            tr.appendChild(td);
+        })
+
+        tabla.appendChild(tr);
+    })
+    console.log(tabla);
+    document.body.appendChild(tabla);
+
+}
+
+        function pintarTablero() {
+            let tabla = document.createElement('table')
+            tabla.style.border="2px solid black"
+            for (let i = 0; i < tablero.length; i++) {
+                let tr = document.createElement('tr')
+                for (let j = 0; j < tablero[i].length; j++) {
+                    let td = document.createElement('td')
+                    td.style.border="2px solid black"
+                    td.innerHTML = tablero[i][j]
+                    tr.appendChild(td)
+                }
+                tabla.appendChild(tr)
+            }
+            document.body.appendChild(tabla)
+        }
+        */
+    </script>
+</body>
+</html>
